@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func fetchImage() {
+        let url = theImageURL
+        let qos = QOS_CLASS_USER_INITIATED
+        dispatch_async(dispatch_get_global_queue(qos, 0)) { [weak self] in
+            if let imageData = NSData(contentsOfURL: url){
+                if let image = UIImage(data: imageData){
+                    dispatch_async(dispatch_get_main_queue()) {
+                        //set the image here
+                        self?.imageView.image = image
+                        self?.makeRoomForImage()
+                    }
+                }
+            }
+        }
+    }
+    
+    func makeRoomForImage () {
+        var extraHeight: CGFloat = 0
+        if imageView.image?.aspectRatio &gt; 0 {
+            if let width = imageView.superview?.frame.size.width {
+                let height = width / imageView.image!.aspectRatio
+                extraHeight = height - imageView.frame.height
+                imageView.frame = CGRect(x: 0, y: 0, width: width, height: height)
+            }
+        } else {
+            extraHeight = -imageView.frame.height
+            imageView.frame = CGRectZero
+        }
+        preferredContentSize = CGSize(width: preferredContentSize.width, height: preferredContentSize.height + extraHeight)
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>146FEE44-E5C5-409F-BDD9-CA188AE1BBB2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Fetches an image from background then displays it in a UIImageView embedded in a container UIView (for sizing)</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Fetch image in background &amp; set on main thread - Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

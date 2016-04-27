@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>		let groupAnimation = CAAnimationGroup()
+		groupAnimation.duration = 0.5
+		groupAnimation.beginTime = CACurrentMediaTime() + 0.5
+		groupAnimation.fillMode = kCAFillModeBackwards
+		groupAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+		
+		groupAnimation.animations = [&lt;#scaleDown#&gt;, &lt;#rotate#&gt;, &lt;#fadeIn#&gt;]
+        &lt;#someView's layer#&gt;.addAnimation(groupAnimation, forKey: nil)
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5325ADA6-0444-454E-A160-FA8D4595B998</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Template for creating a CAAnimationGroup</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create CAAnimationGroup</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private extension UIColor {
+    class var random: UIColor {
+        switch arc4random() % 5 {
+        case 0: return UIColor.greenColor()
+        case 1: return UIColor.blueColor()
+        case 2: return UIColor.orangeColor()
+        case 3: return UIColor.redColor()
+        case 4: return UIColor.purpleColor()
+        default: return UIColor.blackColor()
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BCF245A0-EE90-41CF-9F76-16D0D084A691</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A private extension to UIColor that returns a random color</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIColor extension - random</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

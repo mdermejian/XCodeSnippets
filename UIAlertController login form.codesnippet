@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>		let alertController = UIAlertController(title: "Login failed", message: "Login failed", preferredStyle: .Alert)
+
+		let loginAction = UIAlertAction(title: "Login", style: .Default) { (_) in
+			let loginTextField = alertController.textFields![0] as UITextField
+			let passwordTextField = alertController.textFields![1] as UITextField
+			
+			//call actual login function
+			//login(loginTextField.text, passwordTextField.text)
+		}
+		loginAction.enabled = false
+		
+		let forgotPasswordAction = UIAlertAction(title: "Forgot Password", style: .Destructive) { (_) in }
+		let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (_) in }
+		
+		alertController.addTextFieldWithConfigurationHandler { (textField) in
+			textField.placeholder = "Login"
+			
+			NSNotificationCenter.defaultCenter().addObserverForName(UITextFieldTextDidChangeNotification, object: textField, queue: NSOperationQueue.mainQueue()) { (notification) in
+				loginAction.enabled = textField.text != ""
+			}
+		}
+		
+		alertController.addTextFieldWithConfigurationHandler { (textField) in
+			textField.placeholder = "Password"
+			textField.secureTextEntry = true
+		}
+		
+		alertController.addAction(loginAction)
+		alertController.addAction(forgotPasswordAction)
+		alertController.addAction(cancelAction)
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B42722B6-6CC3-488D-9578-F42D9778A68F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates and presents a login form using a UIAlertController  - alert style</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAlertController login form</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>		let alertController = UIAlertController(title: "Login failed", message: "Login failed", preferredStyle: .Alert)
+
+		alertController.addTextFieldWithConfigurationHandler { (textField) in
+			textField.placeholder = "Email"
+			textField.keyboardType = .EmailAddress
+		}
+		
+		alertController.addTextFieldWithConfigurationHandler { (textField) in
+			textField.placeholder = "Password"
+			textField.secureTextEntry = true
+		}
+		
+		alertController.addTextFieldWithConfigurationHandler { (textField) in
+			textField.placeholder = "Password Confirmation"
+			textField.secureTextEntry = true
+		}
+		
+		presentViewController(alertController, animated: true) {
+			// ...
+		}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>824B70A3-C499-4882-A968-EBAEF11D9D8A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates and displays a sign up form using a UIAlertController - alert style</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAlertController sign up form</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

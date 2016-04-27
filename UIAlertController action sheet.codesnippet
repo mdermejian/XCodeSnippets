@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>		let alertController = UIAlertController(title: nil, message: "Takes the appearance of the bottom bar if specified; otherwise, same as UIActionSheetStyleDefault.", preferredStyle: .ActionSheet)
+		
+		let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+			// ...
+		}
+		alertController.addAction(cancelAction)
+		
+		let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+			// ...
+		}
+		alertController.addAction(OKAction)
+		
+		let destroyAction = UIAlertAction(title: "Destroy", style: .Destructive) { (action) in
+			print(action)
+		}
+		alertController.addAction(destroyAction)
+		
+		self.presentViewController(alertController, animated: true) {
+			// ...
+		}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>705E9575-17AB-4C57-B29C-DF1F2DE54A41</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create and display a UIAlertController action sheet style</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIAlertController action sheet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

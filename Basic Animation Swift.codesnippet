@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>		let flyRight = CABasicAnimation(keyPath: "position.x")
+		flyRight.fromValue = -view.bounds.size.width/2
+		flyRight.toValue = view.bounds.size.width/2
+		flyRight.duration = 1.5
+		flyRight.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+		flyRight.fillMode = kCAFillModeBackwards
+		flyRight.beginTime = CACurrentMediaTime() + 0.33
+		&lt;#view's layer#&gt;.addAnimation(flyRight, forKey: nil)
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2757E89C-D4DE-41CA-8133-E27F94C844DE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Template for creating a CABasicAnimation</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Basic Animation Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct PackagingOptions : OptionSetType {
+    let rawValue: Int
+    init(rawValue: Int) { self.rawValue = rawValue }
+        
+    static let Box = PackagingOptions(rawValue: 1)
+    static let Carton = PackagingOptions(rawValue: 2)
+    static let Bag = PackagingOptions(rawValue: 4)
+    static let Satchel = PackagingOptions(rawValue: 8)
+    static let BoxOrBag: PackagingOptions = [Box, Bag]
+    static let BoxOrCartonOrBag: PackagingOptions = [Box, Carton, Bag]
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2F618B2-32BD-4879-9681-8D4B55596857</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Template for creating an OptionSetType </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Option Set Type - Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

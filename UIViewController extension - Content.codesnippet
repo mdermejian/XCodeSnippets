@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// if I'm a navigation controller, then return my visible view controller, otherwise return myself
+// used when segueing into a UIViewController embedded in a UINavigationController
+extension UIViewController {
+    var contentViewController : UIViewController {
+        if let navcon = self as? UINavigationController {
+            return navcon.visibleViewController!
+        }else {
+            return self
+        }
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B311312A-0D52-4E2D-907E-3DDF45F2BC10</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Used when segueing into a UIViewController embedded in a UINavigationController</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIViewController extension - Content</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>		let flight = CAKeyframeAnimation(keyPath: "position")
+		flight.duration = 12.0
+		flight.repeatCount = FLT_MAX
+		
+		flight.keyTimes = [0, 0.5, 1]
+		flight.values = [
+			CGPoint(x: -50.0, y: 0.0),
+			CGPoint(x: CGRectGetWidth(view.frame) + 50.0, y: 160.0),
+			CGPoint(x: -50.0, y: CGRectGetHeight(view.frame)/2)
+			] .map { NSValue(CGPoint: $0) }
+		
+		balloon.addAnimation(flight, forKey: nil)
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>60432B88-5EA3-49B5-AE3D-3D1DE6C2BB03</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Template for creating a basic CAKeyframeAnimation in Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Basic CAKeyframeAnimation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

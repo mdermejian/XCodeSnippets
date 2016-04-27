@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>		let flyRight = CASpringAnimation(keyPath: "position.x")
+		flyRight.damping = 250.0
+		flyRight.initialVelocity = 1.0
+		flyRight.mass = 50.0
+		flyRight.stiffness = 800.0
+		flyRight.duration = flyRight.settlingDuration
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C5F97FD7-6052-4BBE-A213-211B46B5490D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Template for creating a basic CASpringAnimation</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Basic Spring Animation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

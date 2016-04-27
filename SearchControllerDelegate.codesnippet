@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - UISearchControllerDelegate
+
+// Called after the search controller's search bar has agreed to begin editing or when
+// 'active' is set to YES.
+- (void)presentSearchController:(UISearchController *)searchController {
+    NSLog(@"presentSearchController");
+}
+
+- (void)willPresentSearchController:(UISearchController *)searchController {
+    // do something before the search controller is presented
+    NSLog(@"willPresentSearchController");
+}
+
+- (void)didPresentSearchController:(UISearchController *)searchController {
+    // do something after the search controller is presented
+    NSLog(@"didPresentSearchController");
+}
+
+- (void)willDismissSearchController:(UISearchController *)searchController {
+    // do something before the search controller is dismissed
+    NSLog(@"willDismissSearchController");
+}
+
+- (void)didDismissSearchController:(UISearchController *)searchController {
+    // do something after the search controller is dismissed
+    NSLog(@"didDismissSearchController");
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>75FEF6C6-FC30-4DE6-BC08-E96ADAFC1F6E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Placeholders for all of the UISearchController delegate methods</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Search Controller Delegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

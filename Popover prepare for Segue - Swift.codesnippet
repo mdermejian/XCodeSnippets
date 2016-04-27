@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // MARK: Popover prepare for segue
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier{
+            switch identifier {
+            case "SomeIdentifier" :
+                if let vc = segue.destinationViewController as? UIViewController //replace UIViewController with custom subclass{
+                    if let ppc = vc.popoverPresentationController{
+                        ppc.permittedArrowDirections = .Any
+                        ppc.delegate = self
+                    }
+                    //more preparation here
+                }
+            default : break
+            }
+        }
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>92432E04-60DE-474C-8EC5-302820AA0A08</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>prepareForSegue that prepares for a Popover segue</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Popover prepare for Segue - Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
